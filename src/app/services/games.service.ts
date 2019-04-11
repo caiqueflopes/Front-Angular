@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GamesService {
-  API_URL = 'http://localhost:3000/api'
+  API_URL = 'https://apives.herokuapp.com'
   constructor(private http: HttpClient) { }
   getGames() {
     return this.http.get(`${this.API_URL}/games`);
